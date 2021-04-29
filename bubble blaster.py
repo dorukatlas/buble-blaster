@@ -142,7 +142,7 @@ while time() < end:
     clean_up_bubs()
     score+=collision()
     if(collision_mine()):
-        end=0
+        break
     if (int(score/BONUS_SCORE))> bonus:
         bonus +=1
         end += TIME_LIMIT
